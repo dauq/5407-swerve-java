@@ -43,16 +43,16 @@ public class RobotContainer {
 
 
 
-  private final IntakeSubsystem m_robotIntake = new IntakeSubsystem();
-  private final ClimbSubsystem m_robotClimb = new ClimbSubsystem();
-  private final ShootSubsystem m_robotShoot = new ShootSubsystem();
+//   private final IntakeSubsystem m_robotIntake = new IntakeSubsystem();
+//   private final ClimbSubsystem m_robotClimb = new ClimbSubsystem();
+//   private final ShootSubsystem m_robotShoot = new ShootSubsystem();
 
   
   private final DriveSubsystem m_robotDrive = new DriveSubsystem();
 
   // The driver's controller
 
-  private final LocationManager m_locationManager = new LocationManager(m_robotShoot);
+//   private final LocationManager m_locationManager = new LocationManager(m_robotShoot);
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
@@ -62,7 +62,7 @@ public class RobotContainer {
     // Configure default commands
 
 
-    m_robotIntake.setDefaultCommand(
+   /*  m_robotIntake.setDefaultCommand(
         new RunCommand(
             () -> 
                 m_robotIntake.intake(m_robotShoot
@@ -82,7 +82,7 @@ public class RobotContainer {
                 m_robotShoot.shoot(
                     ),
         m_robotShoot));
-
+ */
     m_robotDrive.setDefaultCommand(     //This is last because the other might change driver inputs as they change. 
        new RunCommand(
           () -> 
