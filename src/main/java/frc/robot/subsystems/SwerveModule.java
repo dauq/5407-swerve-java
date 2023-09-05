@@ -12,6 +12,7 @@ import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.math.controller.PIDController;
 import edu.wpi.first.math.controller.ProfiledPIDController;
 import edu.wpi.first.math.geometry.Rotation2d;
+import edu.wpi.first.math.kinematics.SwerveModulePosition;
 import edu.wpi.first.math.kinematics.SwerveModuleState;
 import edu.wpi.first.math.trajectory.TrapezoidProfile;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
@@ -115,9 +116,13 @@ public class SwerveModule {
     }
         
     
-    m_driveMotor = new TalonFX(driveMotorChannel, "DriveSubsystemCANivore");
+    // m_driveMotor = new TalonFX(driveMotorChannel, "DriveSubsystemCANivore");
 
-    m_turningMotor = new TalonFX(turningMotorChannel, "DriveSubsystemCANivore");
+    // m_turningMotor = new TalonFX(turningMotorChannel, "DriveSubsystemCANivore");
+
+    m_driveMotor = new TalonFX(driveMotorChannel);
+
+    m_turningMotor = new TalonFX(turningMotorChannel);
 
     m_turningMotor.configSupplyCurrentLimit(
       new SupplyCurrentLimitConfiguration(true,     // enabled      
@@ -126,7 +131,9 @@ public class SwerveModule {
                                         0.1));      // trigger threshold time seconds
 
 
-    m_turningEncoder = new CANCoder(turningEncoderPorts, "DriveSubsystemCANivore");
+    // m_turningEncoder = new CANCoder(turningEncoderPorts, "DriveSubsystemCANivore");
+
+    m_turningEncoder = new CANCoder(turningEncoderPorts);
 
     m_driveMotor.setInverted(driveEncoderReversed);
 
@@ -168,6 +175,12 @@ public class SwerveModule {
     
   }
 
+  public SwerveModulePosition getPosition() {
+    return new SwerveModulePosition( m_driveMotor.getSelectedSensorPosition(), 
+    Rotation2d.fromDegrees(m_turningEncoder.getAbsolutePosition()));
+    
+    
+  }
 
   private double getCurrentTicks(){
     return m_turningMotor.getSelectedSensorPosition();
