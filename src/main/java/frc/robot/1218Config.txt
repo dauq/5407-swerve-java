@@ -1,0 +1,176 @@
+# Below are unused config entries.
+# They are here because someone put in a config entry in code to pull it but.# no entry exists for it in the config file. You can copy them and put then in you config file if you want.
+# To use them you have to uncomment themm, just saying! :)
+
+kTestingGyroNavigate                                      | true                |  must be false at competition 
+
+
+AUTON_TotalAutons                                         | 6                    | 
+
+# Auton 1
+AUTON_2BALL_RIGHT_kInitial_Heading                      | 0.0               |
+AUTON_2BALL_RIGHT_kInitial_Power                        | -.40              |
+AUTON_2BALL_RIGHT_kInitial_Time                         | 3.0               |
+
+AUTON_2BALL_RIGHT_kToShoot_Heading                      | 0.0               |
+AUTON_2BALL_RIGHT_kToShoot_Power                        | .40               | 
+AUTON_2BALL_RIGHT_kToShoot_Time                         | 3.0               | 
+
+AUTON_2BALL_RIGHT_kShoot_Time                           | 1.5               | 
+
+AUTON_2BALL_RIGHT_kBackOut_Heading                      | 0.0               | 
+AUTON_2BALL_RIGHT_kBackOut_Power                        | -.40              | 
+AUTON_2BALL_RIGHT_kBackOut_Time                         | 5.0               | 
+
+# Auton 2
+AUTON_2BALL_kInitial_Heading                              | 0.0                  | 
+AUTON_2BALL_kInitial_Power                                | -0.5                 | 
+AUTON_2BALL_kInitial_Time                                 | 2.5                  |
+ 
+AUTON_2BALL_kToShoot_Heading                              | 0.0                  |
+AUTON_2BALL_kToShoot_Power                                | 0.5                  | 
+AUTON_2BALL_kToShoot_Time                                 | 2.0                  | 
+ 
+AUTON_2BALL_kToShoot_Heading                              | 0.0                  |
+AUTON_2BALL_kToShoot_Power                                | 0.5                  | 
+AUTON_2BALL_kToShoot_Time                                 | 2.0                  | 
+
+# Auton 3
+AUTON_3BALL_RIGHT_kInitial_Heading                      | 0.0               |
+AUTON_3BALL_RIGHT_kInitial_Power                        | -.40              |
+AUTON_2BALL_RIGHT_kInitial_Time                         | 3.0               |
+
+AUTON_3BALL_RIGHT_kToShoot_Heading                      | 0.0               |
+AUTON_3BALL_RIGHT_kToShoot_Power                        | .40               | 
+AUTON_3BALL_RIGHT_kToShoot_Time                         | 3.0               | 
+
+AUTON_3BALL_RIGHT_kShoot_Time                           | 1.5               | 
+
+AUTON_3BALL_RIGHT_kBackOut_Heading                      | 0.0               | 
+AUTON_3BALL_RIGHT_kBackOut_Power                        | -.40              | 
+AUTON_3BALL_RIGHT_kBackOut_Time                         | 5.0               | 
+
+
+#Auton 4
+AUTON_4BALL_kInitial_Heading                              | 0.0                  | 
+AUTON_4BALL_kInitial_Power                                | -0.5                 | 
+AUTON_4BALL_kInitial_ShootTime                            | 1.5                  | 
+AUTON_4BALL_kInitial_Time                                 | 2.5                  |
+ 
+AUTON_4BALL_kToTerm_Heading                               |  37.4                | 
+AUTON_4BALL_kToTerm_Power                                 | -1.0                 | 
+AUTON_4BALL_kToTerm_Time                                  |  1.75                  |
+ 
+AUTON_4BALL_kAtTerm_Heading                               | -31.0                |  turning to the terminal 
+AUTON_4BALL_kAtTerm_Power                                 | -0.4                 |  backup slowly
+AUTON_4BALL_kAtTerm_Time                                  | 3.0                  |  
+ 
+AUTON_4BALL_kFromTerm_Heading                             | -31.0                | 
+AUTON_4BALL_kFromTerm_Power                               | 0.3                  | 
+AUTON_4BALL_kFromTerm_Time                                | 2.0                  | 
+
+AUTON_4BALL_kShot2_Heading                                | 37.4                 | 
+AUTON_4BALL_kShot2_Power                                  | 1.0                  | 
+AUTON_4BALL_kShot2_Shoot                                  | 4.0                  | 
+AUTON_4BALL_kShot2_Time                                   | 3.5                  | 
+
+
+GYRO_NAV_PID_D                                            | 0.00                 | 
+GYRO_NAV_PID_I                                            | 0.0                  | 
+GYRO_NAV_PID_P                                            | 1.0                  | 
+GYRO_NAV_Power_Proportion                                 | 0.015                 | 
+GYRO_NAV_Power_Deadband                                   | 0.01                 | 
+GYRO_NAV_Min_Power                                        | 0.075                | 
+
+# LED_ClimbDone                                             | 0.99                 | 
+# LED_ClimbingFast                                          | -0.11                | 
+# LED_ClimbingMedium                                        | -0.31                | 
+# LED_ClimbingSlow                                          | -0.25                | 
+# LED_Default                                               | 0.49                 | 
+# LED_EndGameChange                                         | 0.57                 | 
+# LED_EndGameStarted                                        | -0.35                | 
+# LED_OnTarget                                              | -0.07                | 
+# LED_Shooting                                              | -0.09                | 
+
+
+CLIMB_kDartFullDownPosit                                  | 0.1309               | 
+CLIMB_kDartFullUpPosit                                    | 0.8725               | New potentiometer on dart (Cameron 3/2/22)
+CLIMB_kDartEncoderAdjust                                  | 0.0               |  chain slipped to we adjust
+CLIMB_kDartNormalSpeed                                    | 0.8                 | 
+
+CLIMB_kLift2FullInPosit                                   | 0.93                | 
+CLIMB_kLift2FullOutPosit                                  | 0.4249               | 
+CLIMB_kLift2EncoderAdjust                                 | 0.0                  | 
+
+CLIMB_kLiftNormalSpeed                                    | 0.8                  | 
+
+CLIMB_kStep1SlowLiftRobotPower                            | 0.2                  | 
+CLIMB_kStep1SlowLiftRobotposit                            | 0.20                 | 
+
+CLIMB_kStep1DartUpToBarPosit                              | 0.834               | 
+CLIMB_kStep2DartSwingUpRobotPosit                         | 0.6467               | 
+CLIMB_kStep2Lift2GrabPipePosit                            | 0.45                 | 
+CLIMB_kStep3DartSwingDownRobotPosit                       | 0.8725                 | 
+CLIMB_kStep3Lift2PullRobotOffPosit                        | 0.58                 | 
+CLIMB_kStep4DartSwingUpRobotPosit                         | 0.6467               | 
+
+
+INPUT_JoystickDeadband                                    | 0.30                 | 
+# INPUT_kDriverControllerPort                               | 0                    | 
+INPUT_kDriverPowerPCT                                     | 0.7                  | 
+INPUT_kDriverStrafePCT                                    | 0.7                  | 
+INPUT_kDriverTurnPCT                                      | 0.85                  | 
+# INPUT_kExtraBoxPort                                       | 3                    | 
+# INPUT_kHoodStickDeadBand                                  | 0.1                  | 
+# INPUT_kOperatorControllerPort                             | 1                    | 
+# INPUT_kTestStepDesc                                       | ClimbStep-           | 
+INPUT_kTurretStickDeadBand                                | 0.8                  | 
+# SHOOTR_MaxPIDVelocity                                     | 8000.0               | 
+# SHOOTR_kDTuningValue                                      | 0.0                  | 
+# SHOOTR_kHoodFullDown                                      | 0.05                 | 
+# SHOOTR_kHoodFullUp                                        | 0.05                 | 
+# SHOOTR_kHoodMaxPowerValue                                 | 0.3                  | 
+# SHOOTR_kHoodPowerDeadBand                                 | 0.05                 | 
+# SHOOTR_kITuningValue                                      | 0.0                  | 
+# SHOOTR_kIntakeMotorPanelId                                | 12                   | 
+# SHOOTR_kPTuningValue                                      | 1.0                  | 
+# SHOOTR_kTurretFullRight                                   | 0.588                | 
+# SHOOTR_kTurretMaxPowerValue                               | 0.3                  | 
+# SHOOTR_kTurretPowerDeadBand                               | 0.3                  | 
+# SHOOTR_kTurrretFullLeft                                   | 0.45                 | 
+# SWRV_DRV_kFrontLeftDriveMotorPort                         | 21                   | 
+
+SWRV_DRV_kFrontLeftTurnEncoderOffsetDeg                   | 214.1                | encoder 35
+# SWRV_DRV_kFrontLeftTurningEncoderPorts                    | 35                   | 
+# SWRV_DRV_kFrontLeftTurningMotorPort                       | 25                   | 
+# SWRV_DRV_kFrontRightDriveMotorPort                        | 22                   | 
+
+SWRV_DRV_kFrontRightTurnEncoderOffsetDeg                  | 18.5                | encoder 36
+# SWRV_DRV_kFrontRightTurningEncoderPorts                   | 36                   | 
+# SWRV_DRV_kFrontRightTurningMotorPort                      | 26                   | 
+# SWRV_DRV_kRearLeftDriveMotorPort                          | 23                   | 
+
+SWRV_DRV_kRearLeftTurnEncoderOffsetDeg                    | -113.0               | encoder 37
+# SWRV_DRV_kRearLeftTurningEncoderPorts                     | 37                   | 
+# SWRV_DRV_kRearLeftTurningMotorPort                        | 27                   | 
+# SWRV_DRV_kRearRightDriveMotorPort                         | 24                   | 
+
+SWRV_DRV_kRearRightTurnEncoderOffsetDeg                   | -17.5               | encoder 38
+# SWRV_DRV_kRearRightTurningEncoderPorts                    | 38                   | 
+# SWRV_DRV_kRearRightTurningMotorPort                       | 28                   | 
+# SWRV_PID_DrivePIDTolerance                                | 0.01                 | 
+
+SWRV_PID_kPModuleTurningController                          | 0.5                | 
+SWRV_PID_kDModuleTurningController                          | 0.0
+                  | 
+
+# SWRV_PID_TurnPIDTolerance                                 | 0.005                | 
+# SWRV_SPEED_kMaxAngularSpeedRadiansPerSecond               | 3.0                  | 
+# SWRV_SPEED_kMaxSpeedMetersPerSecond                       | 3.0                  | 
+# SWRV_kAdjustment                                          | 0.001                | 
+# SWRV_kMaxModuleAngularAccelerationRadiansPerSecondSquared | 6.283185307179586    | 
+# SWRV_kMaxModuleAngularSpeedRadiansPerSecond               | 6.283185307179586    | 
+# _TELEM_FileName                                           | 1218_Telemetry       | 
+# _TELEM_FilePath                                           | /c/1218Data          | 
+_TELEM_FullDetails                                        | true                | 
+_TELEM_TimestampFile                                      | true               | 

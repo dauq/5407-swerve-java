@@ -1,0 +1,66 @@
+####################################################################################################
+# Column Name for the telemetry. These match the name used on the dashboard by telemetry
+# You can look in the Unused fiel for ones that were missed. These or put in place that m_backLeft
+# sense. Inputs for the shooter are near the shooter values. Need to add many more inputs to this.
+#
+# Important: This file must be copied onto the robot in the /c/1218Data folder.
+# If changes are made on the robot please copy the changed file here for reference.  
+####################################################################################################
+
+ROBOT END GAME MODE
+ROBOT NORMAL MODE
+Robot Current
+Robot Energy
+Robot Intake Current
+Robot Power
+Robot Volts
+
+INTAKE Dep-Ret Power
+
+INPUT Driver Fire
+INPUT Operator Fire
+SHOOTR Full Auto
+SHOOTR Target Auto
+SHOOTR Wheel Auto
+SHOOTR Input Power
+SHOOTR AUTO Desired Velocity
+SHOOTR Current Velocity
+
+CAMERA Y
+HOOD Posit
+HOOD Power
+HOOD Status
+
+CAMERA Sees Target
+CAMERA Area
+
+INPUT Turret Manual Adjust
+CAMERA X
+TURRET Status
+TURRET Position
+TURRET Power
+TURRET On Target
+
+TEST Button Value
+TEST Step
+CLIMB Lift1 Posit
+CLIMB Lift1 Power
+CLIMB Lift2 Posit
+CLIMB Lift2 Power
+CLIMB DART Posit
+CLIMB DART Power
+
+INPUT Driver Power
+INPUT Driver Strafe
+INPUT Driver Turn
+
+Swerve Drive Angle
+Swerve Drive m_backLeft Angle
+Swerve Drive m_backLeft Speed
+Swerve Drive m_backRight Angle
+Swerve Drive m_backRight Speed
+Swerve Drive m_frontLeft Angle
+Swerve Drive m_frontLeft Speed
+Swerve Drive m_frontRight Angle
+Swerve Drive m_frontRight Speed
+
